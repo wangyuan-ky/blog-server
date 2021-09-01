@@ -52,7 +52,7 @@ module.exports = {
 该项目使用[Sequelize](https://sequelize.org/v5/)来操作数据库。使用`sequelize-cli`做数据库的迁移，非常方便，只需要我们提前定义好运行文件，需要的时候就可以直接操作并映射到数据库。如果你对`sequelize-cli`还不太了解可以参考官方文档[migrations](https://sequelize.org/v5/manual/migrations.html)。由于我提前把一些常用的命令写到了`package.json`文件中的`scripts`中,操作起来就更加方便了，只要执行
 
 ```bash
-yarn migrate
+npm run migrate
 ```
 对应的数据表就创建好了。
 
@@ -60,7 +60,7 @@ yarn migrate
 为了方便测试，再创建数据表后，可以运行如下命令后添加一些初始化的数据，其中会自动创建2个测试账户，2篇文章，和一些分类、标签。这一步是可选的，如果你不需要初始化数据，可以选择不运行它。
 
 ```bash
-yarn seed
+npm run seed
 ```
 
 #### 启动项目
@@ -69,10 +69,7 @@ yarn seed
 ```bash
 $ npm run dev
 ```
-或
-```bash
-$ yarn dev
-```
+
 再启动前端项目，整个项目就运行起来了。
 
 ## 运行效果
